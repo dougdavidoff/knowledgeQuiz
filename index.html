@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Knowledge Quiz</title>
+
+        <!-- Added a link to Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <!-- Added a link to our external stylesheet-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <!-- Jumbotron to is introductory card to the quiz -->
+        <div class="jumbotron" id="intro">
+            <h1 class="display-4">Test your geography knowledge!</h1>
+            <p class="lead" id="demo">A deceptively simple timed quiz of your geography knowledge.</p>
+            <br>
+            <p class="rules">The timer counts down at a steady pace. Except for when you pick a wrong answer. Then you are penalized by losing a big chunk of time. [Photo source: NASA]</p>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" id="beginButton" href="#" role="button">Let's begin</a>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <span id="timer"></span>
+            </div>
+          </div>
+
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
