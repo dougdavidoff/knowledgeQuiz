@@ -21,11 +21,31 @@ document.getElementById("beginButton").addEventListener("click", function(){
         console.log("The timer should be displayed");
   });
 
-  var questionEl = document.createElement("p");
-  questionEl.textContent = "Reserved for question";
-  body.appendChild(questionEl);
-  questionEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
+  var questionOne = [
+        "Question One",
+        "Answer 1-A",
+        "Answer 2-A",
+        "Answer 3-A"
+    ];
+    
+    document.getElementById("question-card").style.visibility = "visible";
 
+
+    var questionDiv = document.getElementById("question-options");
+
+    for (var i = 0; i < questionOne.length; i++) {
+        var newQuestionP = document.createElement("p");
+        newQuestionP.textContent = questionOne[i];
+        questionDiv.appendChild(newQuestionP);
+    }
+
+
+//   var questionEl = document.getElementById("questionDiv");
+//   questionEl.textContent = "Reserved for question";
+//   var newDiv = document.createElement("div");
+//   newDiv.textContent = "A pleasure to meet you!";
+//   questionEl.appendChild(newDiv);
+  
 
 function removeJumbotron() {
     var myobj = document.getElementById("intro");
