@@ -1,7 +1,7 @@
 var body = document.body;
 
-var count = 61;
-var counter = setInterval(countdown, 1000);
+ var count = 61;
+// var counter = setInterval(countdown, 1000);
 
 
 
@@ -9,6 +9,12 @@ document.getElementById("beginButton").addEventListener("click", function(){
     console.log("The event listener worked.");
     removeJumbotron();
     console.log("The Jumbotron should be removed");
+    // var count = 61;
+    var counter = setInterval(countdown, 1000);
+    // document.getElementById("question-options").style.display = "block";
+    document.getElementById("question-card").style.display = "block";
+    
+    
     // function countdown() {
     //     count = count - 1;
     //     if (count <= 0) {
@@ -17,27 +23,30 @@ document.getElementById("beginButton").addEventListener("click", function(){
     //     }
 //        document.getElementById("timer").innerHTML = count + " seconds";
 //    }
-        countdown();
+       // countdown();
         console.log("The timer should be displayed");
   });
 
   var questionOne = [
         "Question One",
+        "The question is on the motion",
         "Answer 1-A",
         "Answer 2-A",
         "Answer 3-A"
     ];
     
-    document.getElementById("question-card").style.visibility = "visible";
 
 
-    var questionDiv = document.getElementById("question-options");
+    // var questionDiv = document.getElementById("question-options");
 
-    for (var i = 0; i < questionOne.length; i++) {
-        var newQuestionP = document.createElement("p");
-        newQuestionP.textContent = questionOne[i];
-        questionDiv.appendChild(newQuestionP);
-    }
+
+    // for (var i = 0; i < questionOne.length; i++) {
+    //     var newQuestionP = document.createElement("p");
+    //     newQuestionP.textContent = questionOne[i];
+    //     questionDiv.appendChild(newQuestionP);
+    // }
+
+
 
 
 //   var questionEl = document.getElementById("questionDiv");
