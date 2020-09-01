@@ -10,6 +10,10 @@ body {
     margin: 100px 0px 0px 250px;
 }
 
+#timer-card {
+    display: none;
+}
+
 /* #question-options {
     display: none;
     color: white;
