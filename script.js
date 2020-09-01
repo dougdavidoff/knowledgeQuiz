@@ -50,7 +50,7 @@ function countdown() {
 
     if(count < 55 && count > 45) {
         var cardIcon = document.getElementById("card-image");
-        cardIcon.setAttribute("src", "https://images-na.ssl-images-amazon.com/images/I/81MTMvioBYL._AC_SL1500_.jpg");
+        cardIcon.setAttribute("src", "./assets/images/usaMap.png");
         cardIcon.setAttribute("alt", "USA map");
 
         var cardHed = document.getElementById("card-headline");
@@ -68,7 +68,7 @@ function countdown() {
 
     if(count <= 45) {
         var cardIcon = document.getElementById("card-image");
-        cardIcon.setAttribute("src", "https://i.ebayimg.com/images/g/wMUAAOSwL-xcEGLZ/s-l300.jpg");
+        cardIcon.setAttribute("src", "./assets/images/NYmap.png");
         cardIcon.setAttribute("alt", "New York State map");
 
         var cardHed = document.getElementById("card-headline");
@@ -76,17 +76,6 @@ function countdown() {
     
         var cardQuest = document.getElementById("card-question");
         cardQuest.innerHTML = "This state borders New York";
-    
-    // var cardAnsA = document.getElementById("card-answer-a");
-    // cardAnsA.innerHTML = "It's a question";
-
-    // var cardAnsB = document.getElementById("card-answer-b");
-    // cardAnsB.innerHTML = "AQ noble mind";
-
-    // var cardAnsC = document.getElementById("card-answer-c");
-    // cardAnsC.innerHTML = "Slings and arrows";
-
-    // cdocument.getElementById("card-question").innerHTML = "This state borders New York";
     
         document.getElementById("card-answer-a").innerHTML = "Ohio";
     
