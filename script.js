@@ -97,14 +97,21 @@ function countdown() {
     document.getElementById("timer").innerHTML = count + " seconds";
 
     if(count <= 50) {
+        var cardIcon = document.getElementById("card-image");
+        cardIcon.setAttribute("src", "./assets/images/usaMap.jpg");
+    cardIcon.setAttribute("alt", "USA map");
+
         document.getElementById("card-answer-c").innerHTML = " ";
-        }
-
-}
-
-function clearCard() {
-    if (count <=50) {
-        document.getElementById("card-answer-c").innerHTML = "New text";
         console.log("Answer C should be changed");
-    }
+        }
+    
+    
+
 }
+
+// //function clearCard() {
+//     if (count <=50) {
+//         document.getElementById("card-answer-c").innerHTML = "New text";
+//         console.log("Answer C should be changed");
+//     }
+// }
