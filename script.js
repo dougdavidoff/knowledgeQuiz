@@ -28,6 +28,7 @@ document.getElementById("beginButton").addEventListener("click", function(){
   });
 
   var questionOne = [
+        // image path goes here
         "Question One",
         "The question is on the motion",
         "Answer 1-A",
@@ -40,11 +41,15 @@ document.getElementById("beginButton").addEventListener("click", function(){
     // var questionDiv = document.getElementById("question-options");
 
 
-    // for (var i = 0; i < questionOne.length; i++) {
-    //     var newQuestionP = document.createElement("p");
-    //     newQuestionP.textContent = questionOne[i];
-    //     questionDiv.appendChild(newQuestionP);
-    // }
+    var newQuestionTitle = document.createElement("h5");
+    newQuestionTitle.textContent = "Question One.";
+
+
+    for (var i = 0; i < questionOne.length; i++) {
+        var newQuestionP = document.createElement("p");
+        newQuestionP.textContent = questionOne[i];
+        questionDiv.appendChild(newQuestionP);
+    }
 
 
 
