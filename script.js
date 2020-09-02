@@ -12,7 +12,7 @@ var cardContent = {
             r1: ["1. Island of Sardinia, Italy", false],
             r2: ["2. Istanbul, Turkey", false],
             r3: ["3. Beijing, China", false],
-            r4: ["4. Chicago, Illinois", true],
+            r4: ["4. Milwaukee, Wisconsin", true],
         }
         },
     Q2: {
