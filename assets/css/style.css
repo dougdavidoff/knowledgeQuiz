@@ -5,14 +5,19 @@ body {
     background-color: black;
 }
 
+#timer-card {
+    display: none;
+}
+
 #question-card {
     display: none;
     margin: 100px 0px 0px 250px;
 }
-
-#timer-card {
-    display: none;
-}
+/* 
+button.link {
+    background: none;
+    border: none;
+} */
 
 /* #question-options {
     display: none;
