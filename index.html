@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Knowledge Quiz</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Knowledge Quiz</title>
 
-        <!-- Added a link to Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <!-- Added a link to Bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-        <!-- Added a link to our external stylesheet-->
-        <link rel="stylesheet" href="./assets/css/style.css">
+      <!-- Added a link to our external stylesheet-->
+      <link rel="stylesheet" href="./assets/css/style.css">
 
-    </head>
+  </head>
 
-    <body>
+  <body>
 
-        <!-- Jumbotron to is introductory card to the quiz -->
-        <div class="jumbotron" id="intro">
-            <h1 class="display-4">Test your geography knowledge!</h1>
-            <p class="lead" id="demo">A deceptively simple timed quiz of your geography knowledge.</p>
-            <br>
-            <p class="rules">The timer counts down at a steady pace. Except for when you pick a wrong answer. Then you are penalized by losing a big chunk of time. [Photo source: NASA]</p>
-            <hr class="my-4">
-            <a class="btn btn-primary btn-lg" id="beginButton" href="#" role="button">Let's begin</a>
-        </div>
+    <!-- Jumbotron to is introductory card to the quiz -->
+    <div class="jumbotron" id="intro">
+      <h1 class="display-4">Test your geography knowledge!</h1>
+      <p class="lead" id="demo">A timed quiz of your geography trivia knowledge.</p>
+      <br>
+      <p class="rules">The timer counts down at a steady pace. Except for when you pick a wrong answer. Then you are penalized by losing a chunk of time. [Photo source: NASA]</p>
+      <hr class="my-4">
+      <a class="btn btn-primary btn-lg" id="beginButton" href="#" role="button">Let's begin</a>
+    </div>
 
-        <div class="card" id="timer-card">
-            <div class="card-body">
-                <span id="timer"></span>
-            </div>
-        </div>
+    <div class="card" id="timer-card">
+      <div class="card-body">
+        <span id="timer"></span>
+      </div>
+    </div>
 
+    <div class="card" id="question-card" style="width: 40rem;">
+      <img class="card-img-top" id="card-image">
+      <div class="card-body">
+        <h5 class="card-title" id="card-headline"></h5>
+        <p class="card-text" id="card-question"></p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="card-answer-a"></li>
+        <li class="list-group-item" id="card-answer-b"></li>
+        <li class="list-group-item" id="card-answer-c"></li>
+        <li class="list-group-item" id="card-answer-d"></li>
+      </ul>
+      <button id="ButtonA">Answer A</button>
+      <button id="ButtonB">Answer B</button>
+      <button id="ButtonC">Answer C</button>
+      <button id="ButtonD">Answer D</button>            
 
+    </div>
 
-        <div class="card" id="question-card" style="width: 40rem;">
-            <img class="card-img-top" id="card-image">
-            <div class="card-body">
-              <h5 class="card-title" id="card-headline"></h5>
-              <p class="card-text" id="card-question"></p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="card-answer-a"></li>
-              <li class="list-group-item" id="card-answer-b"></li>
-              <li class="list-group-item" id="card-answer-c"></li>
-              <li class="list-group-item" id="card-answer-d"></li>
-            </ul>
-            <button id="Resp1">Answer 1</button>
-            <button id="Resp2">Answer 2</button>
-            <button id="Resp3">Answer 3</button>
-            <button id="Resp4">Answer 4</button>
-
-
-            <!-- <div class="card-body">
-              <a href="http://www.google.com" class="card-link">Answer 1</a>
-              <a href="http://www.nytimes.com" class="card-link">Answer 2</a>
-              <a href="http://www.ctpost.com" class="card-link">Answer 3</a>
-              <a href="http://www.courant.com" class="card-link">Answer 4</a>
-            </div> -->
-
-              <!-- <button type="button" class="btn btn-primary">Answer A</button>
-              <button type="button" class="btn btn-success">Answer B</button>
-              <button type="button" class="btn btn-danger">Answer C</button>
-              <button type="button" class="btn btn-info">Answer D</button>
-            
-              </div> -->
-
-          </div>
-
-        <script type="text/javascript" src="./script.js"></script>
-    </body>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
